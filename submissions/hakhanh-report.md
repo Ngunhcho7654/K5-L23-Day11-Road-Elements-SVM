@@ -51,9 +51,18 @@ Bạn kiểm lô của tôi: [Chưa nhận phiếu — cần bạn điền sau k
 *(Số shape phía "job" đối chiếu từ bản export gốc trực tiếp từ CVAT trong `submissions/raw/hakhanh-front.zip` và `submissions/raw/hakhanh-fisheye.zip`; bạn nên đối chiếu thêm một lần trên giao diện CVAT khi chụp ảnh Mục 6.)*
 
 ## 6. Ảnh chụp màn hình
-1. Tab Labels của project: `[Cần bạn chụp và chèn ảnh màn hình tab Labels của project d11-road-hakhanh trên CVAT]`
-2. Một ảnh camera trước đã gán đủ (làn, vùng lái, đèn/biển): `[Cần bạn chụp và chèn ảnh màn hình một ảnh front, ví dụ A08 hoặc A10 trên CVAT]`
-3. Một ảnh fisheye đã gán, phóng to đoạn polyline cong: `[Cần bạn chụp và chèn ảnh màn hình một ảnh fisheye phóng to polyline cong, ví dụ B03 hoặc B04 trên CVAT]`
+1. Tab Labels của project (`K5-L23-Day11-Road-Elements-SVM` trên CVAT, đủ 6 label vẽ + 4 label tag):
+
+![Tab Labels của project trên CVAT](images/hakhanh-01-project-labels.png)
+
+2. Một ảnh camera trước đã gán đủ (`A01_bc5fadac-fa6dd225.jpg`: đủ 4 tag + 9 shape gồm làn, vùng lái, biển báo — tổng `Items: 13`):
+
+![Ảnh camera trước A01 đã gán đủ trên CVAT](images/hakhanh-02-front-A01.jpg)
+
+3. Một ảnh fisheye đã gán, phóng to đoạn polyline cong (`B03_04267_RV.png`: đủ 4 tag + 13 shape, polyline `lane` / `road_curb` đi theo cung cong):
+
+![Ảnh fisheye B03 đã gán polyline cong trên CVAT](images/hakhanh-03-fisheye-B03.jpg)
+
 4. Một đoạn XML có `<polyline label="lane">` *(trích nguyên văn từ `annotations.xml` trong `submissions/hakhanh-front.zip`, ảnh `A01_bc5fadac-fa6dd225.jpg`, vạch `R1`)*:
 
 ```xml
